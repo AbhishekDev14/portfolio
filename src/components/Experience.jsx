@@ -57,7 +57,7 @@ export default function Experience() {
                   <p className="text-xs text-gray-400 mt-2">{experience.date}</p>
                 </div>
               </div>
-              <ReadMore text={experience.desc} lines={3} />
+              <ReadMore text={experience.desc} />
             </div>
           </div>
         ))}

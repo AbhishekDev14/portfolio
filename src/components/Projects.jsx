@@ -27,7 +27,7 @@ export default function Projects() {
               <h3 className="text-xl font-bold text-white mb-2">
                 {project.title}
               </h3>
-              <ReadMore text={project.description} lines={3} />
+              <ReadMore text={project.description}/>
             </div>
           </div>
         ))}
