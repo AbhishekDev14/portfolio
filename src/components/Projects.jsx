@@ -1,4 +1,5 @@
 import { projects } from '../constants'
+import ReadMore from './ReadMore'
 
 export default function Projects() {
   return (
@@ -16,7 +17,7 @@ export default function Projects() {
       </div>
 
       {/* Projects Grid */}
-      <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
         {projects.map((project) => (
           <div
             key={project.id}
@@ -26,9 +27,7 @@ export default function Projects() {
               <h3 className="text-xl font-bold text-white mb-2">
                 {project.title}
               </h3>
-              <p className="text-gray-300 mb-4 pt-4 line-clamp-3">
-                {project.description}
-              </p>
+              <ReadMore text={project.description} lines={3} />
             </div>
           </div>
         ))}

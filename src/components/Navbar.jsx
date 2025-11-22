@@ -38,10 +38,9 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 w-full z-50 transition duration-300 
         px-[7vw] md:px-[7vw] lg:px-[20vw] 
-        ${
-          isScroll
-            ? "bg-[#054261]/50 backdrop-blur-md shadow-md"
-            : "bg-transparent"
+        ${isScroll
+          ? "bg-[#054261]/50 backdrop-blur-md shadow-md"
+          : "bg-transparent"
         }
       `}
     >

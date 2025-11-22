@@ -1,4 +1,5 @@
 import { experiences } from '../constants'
+import ReadMore from './ReadMore'
 
 export default function Experience() {
   return (
@@ -56,7 +57,7 @@ export default function Experience() {
                   <p className="text-xs text-gray-400 mt-2">{experience.date}</p>
                 </div>
               </div>
-              <p className="mt-4 text-gray-300">{experience.desc}</p>
+              <ReadMore text={experience.desc} lines={3} />
             </div>
           </div>
         ))}
